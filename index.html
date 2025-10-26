@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/employee-management.js"></script>
+</head>
+<body>
+    <h1 id="header">Showing 5 Employees</h1>
+
+    <form id="addEmployeeForm">
+        <label>
+            Name:
+            <input type="text" id="name">
+            <span class="error" id="nameError"></span>
+        </label>
+        <label>
+            Title:
+            <input type="text" id="title">
+            <span class="error" id="titleError"></span>
+        </label>
+        <label>
+            Extension:
+            <input type="text" id="extension">
+            <span class="error" id="extensionError"></span>
+        </label>
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <table id="employeeTable" border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Extension</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
